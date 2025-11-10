@@ -22,10 +22,12 @@ Lleva tus proyectos de *machine learning* a otro nivel y, cuando quieras, habili
 
 ### 1) Clonar, construir y levantar
 ```bash
-PS D:\> git clone https://github.com/mineriadedatos/m2m.git
-PS D:\> cd m2m
-PS D:\m2m> docker compose up --build
+git clone https://github.com/mineriadedatos/m2m.git
+```
 
+```bash
+cd m2m
+docker compose up --build
 ```
 
 ### 2) Abrir Jupyter
@@ -130,7 +132,10 @@ Listo. ¡A construir y automatizar! 🧠⚙️
 ### 🐳 Explora Docker
 En otra terminal puede ver que el servicio  ya corre
 ```bash
-PS D:\m2m> docker ps
+docker ps
+```
+Salida:
+```bash
 CONTAINER ID   IMAGE          COMMAND                  CREATED          STATUS          PORTS                    NAMES
 15f94d9a7373   m2m-anaconda   "jupyter notebook --…"   21 seconds ago   Up 18 seconds   0.0.0.0:3131->3131/tcp   m2m
 
@@ -139,8 +144,10 @@ CONTAINER ID   IMAGE          COMMAND                  CREATED          STATUS  
 (opcional) si deseas ingresar dentro del contenedor
 
 ```bash
-PS D:\m2m> docker exec -it m2m bash
-
+docker exec -it m2m bash
+```
+Salida:
+```bash
 (base) root@845d4d868b87:/#   
 ```
 
