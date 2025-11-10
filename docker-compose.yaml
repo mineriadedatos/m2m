@@ -1,0 +1,12 @@
+version: "3.9"
+
+services:
+  anaconda:
+    container_name: m2m
+    build: .
+    tty: true
+    restart: unless-stopped # no reinicies si el contenedor fue detenido manualmente
+    volumes:
+      - ./notebooks:/opt/notebooks:rw   # tus .ipynb quedan fuera del contenedor
+    ports:
+      - "3131:3131" # puedes cambiara por - "3132:3131"
