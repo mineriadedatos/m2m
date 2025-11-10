@@ -68,12 +68,15 @@ Edita el `Dockerfile` y **descomenta** el bloque que necesites, luego reconstruy
 #     jupyter kernelspec list
 ```
 
-Reconstruir y levantar:
+Reconstruir:
 ```bash
 docker compose build --no-cache
-docker compose up -d
 ```
 
+Levantar:
+```bash
+docker compose up
+```
 ---
 
 ## 🔒 Seguridad recomendada
